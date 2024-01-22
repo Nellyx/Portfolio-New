@@ -3,7 +3,7 @@ import Dock from "../components/Dock/dock";
 import classes from "./mainLayout.module.css";
 import { Outlet } from "react-router";
 import { ThemeContext } from "../context";
-import Avatar from "../assets/images/Dock/banky.png";
+import Avatar from "../assets/images/Dock/nelly.jpg";
 
 const MainLayout = () => {
   const { theme } = useContext(ThemeContext);
