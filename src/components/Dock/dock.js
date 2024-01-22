@@ -68,14 +68,14 @@ const Dock = ({ open, setOpen }) => {
         <LinkedIn />
       </a>
 
-      <a
+      {/* <a
         className={classes.mail}
         href="mailto:neilsonmike14@gmail.com?subject=Hi%Michael&body=I%20saw%20your%20portfolio%20"
         rel="noopener noreferrer"
       >
         <p>Mail</p>
         <Mail />
-      </a>
+      </a> */}
       <a href={Cv} download>
         <p>Resume</p>
         <Resume />
