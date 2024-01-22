@@ -1,3 +1,3 @@
-# Bankole Yusuf
+# Michael Nelsom
 
 ## My personal portfolio
