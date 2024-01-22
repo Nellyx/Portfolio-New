@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Trap-Black";
+  src: url("./assets/fonts/Trap-Black.otf");
+}
+@font-face {
+  font-family: "Trap-Bold";
+  src: url("./assets/fonts/Trap-Bold.otf");
+}
+@font-face {
+  font-family: "Trap-Extrabold";
+  src: url("./assets/fonts/Trap-ExtraBold.otf");
+}
+@font-face {
+  font-family: "Trap-Light";
+  src: url("./assets/fonts/Trap-Light.otf");
+}
+@font-face {
+  font-family: "Trap-Medium";
+  src: url("./assets/fonts/Trap-Medium.otf");
+}
+@font-face {
+  font-family: "Trap-Semibold";
+  src: url("./assets/fonts/Trap-SemiBold.otf");
+}
+@font-face {
+  font-family: "Trap-Regular";
+  src: url("./assets/fonts/Trap-Regular.otf");
+}
+
+:root {
+  --trap-extrabold: trap-extrabold;
+  --trap-regular: trap-regular;
+  --trap-bold: trap-bold;
+  --trap-light: trap-light;
+  --trap-semibold: trap-semibold;
+  --trap-medium: trap-medium;
+  --trap-semibold: trap-semibold;
+  --outfit: "Outfit", sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}

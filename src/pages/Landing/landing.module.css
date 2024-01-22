@@ -1,0 +1,66 @@
+.main {
+  padding: 4rem 0 6rem;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+.container > p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main h1 {
+  font-family: var(--trap-extrabold);
+  line-height: 5.5vw;
+  width: 90%;
+  font-size: 5vw;
+  margin: 0 auto;
+}
+.main p {
+  font-family: var(--outfit);
+  line-height: 33px;
+  padding-top: 2rem;
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+  .main h1 {
+    font-size: 6vw;
+    line-height: 7vw;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main h1 {
+    font-size: 6.5vw;
+  }
+  .main p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main{
+  padding: 6rem 0;
+
+  }
+  .main h1 {
+    font-size: 8.5vw;
+    line-height: 12vw;
+  }
+}

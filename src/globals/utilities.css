@@ -1,0 +1,29 @@
+.flex {
+  display: flex;
+}
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.relative {
+  position: relative;
+}
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mt-md {
+  margin-top: 2.5rem;
+}
+.mt-sm {
+  margin-top: 1rem;
+}
+.mb-sm {
+  margin-bottom: 1rem;
+}
+.mb-md {
+  margin-bottom: 2.5rem;
+}

@@ -1,0 +1,152 @@
+.container {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  border-radius: 20px 20px 0 0;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50rem;
+  padding: 1rem;
+  background: #36454f;
+  margin: 0 auto;
+  transition: all 0.5s;
+}
+.darkMode {
+  background: #000;
+}
+.container > a,
+.dark {
+  background-color: #2a363d;
+  border-radius: 10px;
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s;
+  width: 60px;
+  height: 60px;
+}
+.darkMode.container > a,
+.darkMode.container .dark {
+  background: #000;
+}
+.dark {
+  transition: all 0.3s;
+}
+.dark p {
+  color: #fff;
+  font-family: var(--outfit);
+}
+.circle {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.circle > span {
+  font-family: var(--trap-extrabold);
+  display: none;
+}
+.circle img {
+  border: 3px solid rgba(255, 255, 255, 0.27);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.line {
+  display: inline-block;
+  width: 2px;
+  height: 60px;
+  background: rgba(196, 196, 196, 0.52);
+}
+.container p {
+  position: absolute;
+  display: none;
+  top: -22px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: var(--outfit);
+}
+.github img {
+  width: 30px;
+}
+.container > div:hover > p,
+.container > a:hover > p {
+  display: block;
+}
+.container > div:hover:not(.circle),
+.container > a:hover {
+  transform: scale(1.2);
+  border-radius: 50%;
+}
+.home:hover ~ .projects,
+.projects:hover ~ .github,
+.blog:hover ~ .behance,
+.behance:hover ~ .linkedIn,
+.linkedIn:hover ~ .twitter,
+.twitter:hover ~ .mail,
+.mail:hover ~ .dark,
+.dark:hover ~ .dark {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 10rem;
+    padding: 3rem 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    border-radius: 0 10px 10px 0px;
+    overflow-y: auto;
+    flex-direction: column-reverse;
+    top: 50%;
+    left: 0;
+    transition: all 0.3s;
+    transform: translateY(100%);
+  }
+  .open {
+    transform: translateY(-50%);
+  }
+  .container > a,
+  .dark {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+  .circle {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .circle img{
+    width: 60px;
+    height: 60px;
+  }
+  .circle > span {
+    display: block;
+    margin-top: 5px;
+  }
+  .line {
+    display: none;
+  }
+
+  .container > div:hover > p,
+  .container > a:hover > p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+}

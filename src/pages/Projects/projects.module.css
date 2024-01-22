@@ -1,0 +1,60 @@
+.main {
+  width: 100%;
+  padding: 3rem 0 8rem 0rem;
+}
+.feature {
+  width: 95%;
+  margin: 0 auto 50px;
+}
+.feature h3 {
+  font-size: 35px;
+  font-weight: bolder;
+  color: #fff;
+  font-family: var(--trap-extrabold);
+}
+.darkMode .feature h3 {
+  color: #000;
+}
+.cardContainer {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  overflow-x: scroll;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.cardContainer::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.cardContainer::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+.darkMode .cardContainer::-webkit-scrollbar-track {
+  background: rgba(149, 143, 143, 0.795);
+}
+.cardContainer::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 10px;
+}
+.darkMode .cardContainer::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .feature {
+    width: 100%;
+  }
+  .cardContainer {
+    width: 100%;
+    flex-direction: column;
+    overflow: unset;
+  }
+}
